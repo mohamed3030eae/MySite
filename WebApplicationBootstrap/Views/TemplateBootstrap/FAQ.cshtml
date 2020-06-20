@@ -1,0 +1,338 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Enter Net Microsoft IE compatibility Meta -->
+    <!-- علشان التنسيقات تكون مظبوطة على متصفح مايكروسوفت-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- First Mobile Meta -->
+    <meta name="viewport" content="width=device-width" />
+    <!--ملف البوتستراب CSS -->
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <!--عربي ملف البوتستراب CSS -->
+    <!--fontawesome -->
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <!--fonts Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Sonsie+One&family=Staatliches&display=swap">
+    @*<link href="~/fonts/FontsGoogle/FasterOne-Regular2.ttf" />
+        <link href="~/fonts/FontsGoogle/Staatliches-Regular.ttf" />*@
+    <!-- الملف الخاص بإضافة التنسيقات والتعديلات على الموقع او البوتستراب-->
+    <link href="~/Content/EditBootstrap.css" rel="stylesheet" />
+    <!-- تنسيقات الصفحات الداخلية-->
+    <link href="~/Content/Pages.css" rel="stylesheet" />
+    <!-- املف الخاص بشغل الميديا كويرى-->
+    <link href="~/Content/media.css" rel="stylesheet" />
+    <!-- املف الخاص DefaultTthemes-->
+    <link href="~/Content/01-Default-TemplateColor.css" rel="stylesheet" />
+    <!-- املف الخاص hover -->
+    <link href="~/Content/hover.css" rel="stylesheet" />
+
+
+    <!-- بيخلي المتصفح يشوف عناصر HTML5 -->
+    <script src="~/Scripts/html5shiv.min.js"></script>
+    <!-- فى متصفح مايكروسوفت  ده بيعالج  الميديا كويري-->
+    <script src="~/Scripts/respond.min.js"></script>
+
+    <title>FAQ</title>
+</head>
+<body>
+    @*Start Our Navbar*@
+    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand hvr-pulse-shrink" href="#"> <span>Eng.</span>Mohamed Ibrahim</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="hvr-wobble-top" href="http://localhost:56011/TemplateBootstrap/Home">Home<span class="sr-only">(current)</span> </a>
+                    </li>
+                    @*<li><a href="#">Home</a></li>*@
+                    <li><a class="hvr-wobble-top" href="http://localhost:56011/TemplateBootstrap/About">About</a></li>
+                    <li class="active"><a class="hvr-wobble-top" href="http://localhost:56011/TemplateBootstrap/FAQ">FAQ</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle hvr-wobble-top" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Programming</a></li>
+                            <li><a href="#">Web Drsign</a></li>
+                            <li><a href="#">Desktop </a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Web Hosting</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="hvr-wobble-top" href="#">Map</a></li>
+                    <li><a class="hvr-wobble-top" href="#">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    @*End Our Navbar*@
+
+    @*start Breadcrumb*@
+    <div class="breadcrumb-holder">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="http://localhost:56011/TemplateBootstrap/Home">Home</a></li>
+                <li class="active">FAQ</li>
+            </ol>
+        </div>
+    </div>
+    @*End Breadcrumb*@
+
+
+    @*Start FAQ Intro*@
+    <section class="faq text-center">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <hr />
+            <p class="lead">Here You Will Find All Questions</p>
+        </div>
+    </section>
+
+    @*End FAQ Intro*@
+
+    @*Start FAQ Accordion*@
+    <section class="faq-questions">
+        <div class="container">
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                @*Start Questions 1*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-one">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-one" aria-expanded="true" aria-controls="collapse-one">
+                                #01 How To Use Bootstrap?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-one" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-one">
+                        <div class="panel-body">
+                            This is Test Message .
+                        </div>
+                    </div>
+                </div>
+                @*End Questions 1*@
+                @*Start Questions 2*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-two">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-two" aria-expanded="true" aria-controls="collapse-two">
+                                #02 How To Use Bootstrap?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-two" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-two">
+                        <div class="panel-body">
+                            This is Test Message .
+                        </div>
+                    </div>
+                </div>
+                @*End Questions 2*@
+                @*Start Questions 3*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-three">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-three" aria-expanded="true" aria-controls="collapse-three">
+                                #03 How To Use Bootstrap?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-three" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-three">
+                        <div class="panel-body">
+                            This is Test Message .
+                        </div>
+                    </div>
+                </div>
+                @*End Questions 3*@
+                @*Start Questions 4*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-for">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-for" aria-expanded="true" aria-controls="collapse-for">
+                                #04 How To Use Bootstrap?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-for" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-for">
+                        <div class="panel-body">
+                            This is Test Message .
+                        </div>
+                    </div>
+                </div>
+                @*End Questions 4*@
+                @*Start Questions 5*@
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="heading-five">
+                        <h4 class="panel-title">
+                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-five" aria-expanded="true" aria-controls="collapse-five">
+                                #05 How To Use Bootstrap?
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapse-five" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-five">
+                        <div class="panel-body">
+                            This is Test Message .
+                        </div>
+                    </div>
+                </div>
+                @*End Questions 5*@
+            </div>
+        </div>
+    </section>
+    @*End FAQ Accordion*@
+
+
+
+
+    @*Start Ultmate Footer Section*@
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Site Map</h3>
+                    <ul class="list-unstyled three-columns">
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                        <li>Link 4</li>
+                        <li>Link 5</li>
+                        <li>Link 6</li>
+                        <li>Link 7</li>
+                        <li>Link 8</li>
+                        <li>Link 9</li>
+                    </ul>
+                    <ul class="list-unstyled social-list">
+                        <li>
+                            <img src="~/img/SocialMedia/facebook.png" alt="facebook" style="width: 50px" />
+                        </li>
+                        <li>
+                            <img src="~/img/SocialMedia/google-plus.png" alt="google-plus" style="width: 50px" />
+                        </li>
+                        <li>
+                            <img src="~/img/SocialMedia/linkedin.png" alt="linkedin" style="width: 50px" />
+                        </li>
+                        <li>
+                            <img src="~/img/SocialMedia/twitter.png" alt="twitter" style="width: 50px" />
+                        </li>
+                        <li>
+                            <img src="~/img/SocialMedia/whatsapp.png" alt="whatsapp" style="width: 50px" />
+                        </li>
+                        <li>
+                            <img src="~/img/SocialMedia/youtube.png" alt="youtube" style="width: 50px" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Latest Articales</h3>
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="~/img/content/content-1.png" style="width: 80px;height: 80px" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"> Programming</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="~/img/content/content-2.png" style="width: 80px;height: 80px" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"> Web Development</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media">
+                        <a class="pull-left" href="#">
+                            <img class="media-object" src="~/img/content/content-2.png" style="width: 80px;height: 80px" alt="" />
+                        </a>
+                        <div class="media-body">
+                            <h4 class="media-heading"> Web Design</h4>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Our Awesome Work</h3>
+                    <img class="img-thumbnail" src="~/img/w-1.jpg" alt="w-1" style="width:150px;height:100px;" />
+                    <img class="img-thumbnail" src="~/img/w-2.jpg" alt="w-2" style="width:150px;height:100px;" />
+                    <img class="img-thumbnail" src="~/img/w-3.jpg" alt="w-3" style="width:150px;height:100px;" />
+                    <img class="img-thumbnail" src="~/img/w-4.jpg" alt="w-4" style="width:150px;height:100px;" />
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright text-center">
+            Copyright &copy; 2020 <span>Eng.</span>Mohamed Ibrahim .
+        </div>
+    </section>
+    @*End Ultmate Footer Section*@
+
+    @*Start Section Tool Box *@
+    <section class="option-box">
+        <div class="color-option">
+            <h4>Color Option </h4>
+            <ul class="list-unstyled">
+                <li data-value="/Content/01-Default-TemplateColor.css"></li>
+                <li data-value="/Content/02-Default-TemplateColor.css"></li>
+                <li data-value="/Content/03-Default-TemplateColor.css"></li>
+                <li data-value="/Content/04-Default-TemplateColor.css"></li>
+                <li data-value="/Content/05-Default-TemplateColor.css"></li>
+            </ul>
+        </div>
+        <i class="fa fa-gear fa-3x gear-check"></i>
+    </section>
+
+
+    @*End Section Tool Box*@
+
+    @*Start Section Overlay*@
+
+    @*<div class="loding-overlay">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>*@
+    @*End Section Overlay*@
+
+    @*Start Section Scroll To Top*@
+    <div id="scroll-top">
+        <i class="fa fa-chevron-up fa-3x"></i>
+    </div>
+    @*End Section Scroll To Top*@
+
+
+    <!--ملف الجيكويري  -->
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <!--ملف البوتستراب JS -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--ملف تعديلات على الجافا إسكربت -->
+    <script src="~/Scripts/plugins.js"></script>
+    <!-- scroll Plugin -->
+    <script src="~/Scripts/jquery.nicescroll.min.js"></script>
+
+</body>
+</html>
